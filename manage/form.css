@@ -1,0 +1,86 @@
+.ui-header{width: 100%;height: 50px;background-color: dodgerblue;}
+.main-sidebar{width: 230px;min-height: 800px; background: yellowgreen;position: absolute;left: 0;top: 50px;}
+.content-wrapper {padding: 5px 20px;    background-color: #ecf0f5;}
+.content-header>h1 {margin: 0;font-size: 24px;}
+.header-color>h1 {color: #64aa41;}
+.content-header {
+    position: relative;
+    padding: 15px 15px 0 0;
+}
+
+.content-header>h1>small {
+    font-size: 15px;
+    display: inline-block;
+    padding-left: 4px;
+    font-weight: 300;
+}
+.content-header>.breadcrumb {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 2px;
+}
+.merchant-info-form{}
+.form-contwidth{
+	/*width: 30% !important;*/
+	height: 30px !important;
+	padding: 2px 5px !important;
+	font-size: 12px !important;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #d2d6de;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+/*.form-control{
+	width: 30%;
+}
+textarea.form-control {
+    margin-left: 160px;
+}
+.input-group {
+    margin-bottom: 25px;
+}*/
+.but-style{
+	/*background: #64aa41;*/
+}
+.but-style2{
+	background: yellow;
+}
+.h1-font {
+    font-size: 20px;
+}
+.labelsize{font-size: 12px;}
+#merchantinfo-business_license_img{
+	/*opacity: 0.1;*/
+	position: relative;
+	top: -25px;
+	
+}
+.btn{background: #64AA41 !important;
+	border: none;
+}
+

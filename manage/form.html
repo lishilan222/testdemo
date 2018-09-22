@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>Bootstrap 101 Template</title>
+
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!--样式修改-->
+		<link rel="stylesheet" type="text/css" href="form.css" />
+		<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<div class="ui-header">fdf</div>
+		<div class="">
+			<div class="main-sidebar" style="width: 230px; height: auto;">1</div>
+			<div class="content-wrapper" style="margin-left: 230px; min-height: 901px;outline: 1px solid red;">
+				<section class="content-header header-color">
+					<h1>
+                            孔雀网_中国全渠道广告推广制作平台<small>Control panel</small>
+                        </h1>
+				</section>
+				<!--<ul class="breadcrumb">
+						<li><a href="/index.php"><i class="fa fa-dashboard"></i>首页</a></li>
+						<li><a href="/index.php?r=merchant-info/index">Merchant Infos</a></li>
+						<li><a href="/index.php?r=merchant-info/view&amp;id=1">1</a></li>
+						<li class="active">Update</li>
+					</ul>   -->
+
+				<section class="content-header">
+					<h1>
+					        General Form Elements
+					    	<small>Preview</small>
+					    </h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#"><i class="fa fa-dashboard"></i> Home</a>
+						</li>
+						<li>
+							<a href="#">Forms</a>
+						</li>
+						<li class="active">General Elements</li>
+					</ol>
+				</section>
+				<div class="merchant-info-update">
+					<h1 class="h1-font">Update Merchant Info: 1</h1>
+					<div class="merchant-info-form col-lg-2">
+
+						<form id="w0" action="/index.php?r=merchant-info/update&amp;id=1" method="post" enctype="multipart/form-data">
+							<input type="hidden" name="_csrf-backend" value="l74kqLtX2NjpjEj3Kqnci1WS23dQ0h015_vvAG6VkRF1j1UGShlRo7Z-GeQfYBfm2mrNdKLZ9zxzOQ0us--HSA==">
+							<div class="form-group field-merchantinfo-merchant_name required  input-group-lg">
+								<label class="control-label labelsize" for="merchantinfo-merchant_name">企业名称</label>
+								<input type="text" id="merchantinfo-merchant_name" class="form-control form-contwidth" name="MerchantInfo[merchant_name]" value="博宇121" maxlength="255" aria-required="true">
+
+								<div class="help-block"></div>
+							</div>
+							<div class="form-group field-merchantinfo-adds input-group-sm">
+								<label class="control-label" for="merchantinfo-adds"></label>
+								<select id="merchantinfo-province_id" class="form-control form-control-inline form-contwidth" name="MerchantInfo[province_id]" onchange="
+                if($(this).val()!=''){
+                    $.get('/index.php?r=merchant-info/get-region&amp;parent_id='+$(this).val(), function(data) {
+                        $('#merchantinfo-city_id').html('<option value=&quot;&quot;>选择城市</option>'+data);
+                    })
+                }else{
+                    $('#merchantinfo-city_id').html('<option value=&quot;&quot;>选择城市</option>');
+                }
+                $('#merchantinfo-area_id').html('<option value=&quot;&quot;>选择县/区</option>');
+            ">
+									<option value="">选择省份</option>
+									<option value="110000" selected="">北京</option>
+									<option value="120000">天津</option>
+									<option value="130000">河北</option>
+									<option value="140000">山西</option>
+									<option value="150000">内蒙古</option>
+									<option value="210000">辽宁</option>
+									<option value="220000">吉林</option>
+									<option value="230000">黑龙江</option>
+									<option value="310000">上海</option>
+									<option value="320000">江苏</option>
+									<option value="330000">浙江</option>
+									<option value="340000">安徽</option>
+									<option value="350000">福建</option>
+									<option value="360000">江西</option>
+									<option value="370000">山东</option>
+									<option value="410000">河南</option>
+									<option value="420000">湖北</option>
+									<option value="430000">湖南</option>
+									<option value="440000">广东</option>
+									<option value="450000">广西</option>
+									<option value="460000">海南</option>
+									<option value="500000">重庆</option>
+									<option value="510000">四川</option>
+									<option value="520000">贵州</option>
+									<option value="530000">云南</option>
+									<option value="540000">西藏</option>
+									<option value="610000">陕西</option>
+									<option value="620000">甘肃</option>
+									<option value="630000">青海</option>
+									<option value="640000">宁夏</option>
+									<option value="650000">新疆</option>
+									<option value="710000">台湾</option>
+									<option value="810000">香港</option>
+									<option value="820000">澳门</option>
+									<option value="900000">钓鱼岛</option>
+								</select>
+								<select id="merchantinfo-city_id" class="form-contwidth form-control form-control-inline" name="MerchantInfo[city_id]" onchange="
+                    if($(this).val() != ''){
+                    
+                        $.get('/index.php?r=merchant-info/get-region&amp;parent_id='+$(this).val(), function(data) {
+                            $('#merchantinfo-area_id').html('<option value=&quot;&quot;>选择县/区</option>'+data);
+                        })
+                    }else{
+                    alert($(this).val());
+                        $('#merchantinfo-area_id').html('<option value=&quot;&quot;>选择县/区</option>');
+                    }
+                ">
+									<option value="">选择城市</option>
+									<option value="110100" selected="">北京</option>
+								</select>
+								<select id="merchantinfo-area_id" class="form-control form-control-inline form-contwidth" name="MerchantInfo[area_id]">
+									<option value="">选择县/区</option>
+									<option value="110101" selected="">东城</option>
+									<option value="110102">西城</option>
+									<option value="110105">朝阳</option>
+									<option value="110106">丰台</option>
+									<option value="110107">石景山</option>
+									<option value="110108">海淀</option>
+									<option value="110109">门头沟</option>
+									<option value="110111">房山</option>
+									<option value="110112">通州</option>
+									<option value="110113">顺义</option>
+									<option value="110114">昌平</option>
+									<option value="110115">大兴</option>
+									<option value="110116">怀柔</option>
+									<option value="110117">平谷</option>
+									<option value="110228">密云</option>
+									<option value="110229">延庆</option>
+								</select>
+
+								<div class="help-block"></div>
+							</div>
+							<div class="form-group field-merchantinfo-merchant_address_details required">
+								<label class="control-label labelsize" for="merchantinfo-merchant_address_details">商户地址详情</label>
+								<input type="text" id="merchantinfo-merchant_address_details" class="form-control form-contwidth" name="MerchantInfo[merchant_address_details]" value="王府井大杂院" maxlength="255" aria-required="true">
+
+								<div class="help-block"></div>
+							</div>
+							<div class="form-group field-category-form-type">
+								<label class="control-label labelsize" for="category-form-type">会员ID</label>
+								<select id="category-form-type" class="form-control select2 form-contwidth" name="MerchantInfo[member_id]" style="width:300px">
+									<option value="">请选择</option>
+									<option value="1" selected="">17551020863</option>
+								</select>
+
+								<div class="help-block"></div>
+							</div>
+							<div class="form-group field-merchantinfo-merchant_info_details">
+								<label class="control-label labelsize" for="merchantinfo-merchant_info_details">店铺简介</label>
+								<input type="text" id="merchantinfo-merchant_info_details" class="form-control form-contwidth" name="MerchantInfo[merchant_info_details]" value="孔雀广告网">
+
+								<div class="help-block"></div>
+							</div>
+							<div class="form-group field-merchantinfo-principal_name">
+								<label class="control-label labelsize" for="merchantinfo-principal_name">法人名称</label>
+								<input type="text" id="merchantinfo-principal_name" class="form-control form-contwidth" name="MerchantInfo[principal_name]" value="" maxlength="120">
+
+								<div class="help-block"></div>
+							</div>
+							<!--    -->
+							<!--    -->
+							<div class="form-group field-merchantinfo-business_license_num">
+								<label class="control-label labelsize" for="merchantinfo-business_license_num">营业注册号</label>
+								<input type="text" id="merchantinfo-business_license_num" class="form-control form-contwidth" name="MerchantInfo[business_license_num]" value="1234567890" maxlength="32">
+
+								<div class="help-block"></div>
+							</div>
+							<div class="form-group field-merchantinfo-business_license_img">
+								<label class="control-label labelsize" for="merchantinfo-business_license_img">营业执照图片</label>
+								<!--<input type="file" placeholder="andj" class="" style="width: 73px;height: 30px;background: #64AA41;border-radius: 5px;color: #FFFFFF;text-align: center;line-height: 30px;">-->
+
+								<!--</input>-->
+								<input type="hidden" name="MerchantInfo[business_license_img]" value="">
+								<input type="file" id="merchantinfo-business_license_img" name="MerchantInfo[business_license_img]" value="" maxlength="">
+
+								<div class="help-block"></div>
+							</div>
+							<!--    -->
+							<!--    -->
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary">确定</button> </div>
+							<span class="glyphicon glyphicon-education"></span>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--</div>-->
+
+	</body>
+
+</html>
